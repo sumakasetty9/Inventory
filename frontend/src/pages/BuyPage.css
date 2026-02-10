@@ -1,0 +1,272 @@
+.buy-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.banner {
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+}
+
+.banner-error {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.banner-info {
+  background: rgba(234, 179, 8, 0.12);
+  color: #fde047;
+  border: 1px solid rgba(234, 179, 8, 0.35);
+}
+
+.limit-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.limit-popup {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.limit-popup-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.limit-popup-message {
+  margin: 0 0 1.25rem;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.limit-popup-message strong {
+  color: var(--warn);
+}
+
+.section {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+}
+
+.section-title {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.muted {
+  color: var(--text-muted);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.product-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.product-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.product-row:last-child {
+  border-bottom: none;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 160px;
+}
+
+.product-name {
+  font-weight: 500;
+}
+
+.product-meta {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.stock-cart-alert {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.stock-cart-alert strong {
+  color: var(--warn);
+  font-weight: 600;
+}
+
+.cart-row-available {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-top: 0.2rem;
+}
+
+.add-cart {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-left: auto;
+}
+
+.btn-stepper {
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 1;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.cart-qty-input {
+  width: 3.5rem;
+  text-align: center;
+  font-family: var(--font-mono);
+  padding: 0.35rem;
+}
+
+.cart-section .table-wrap {
+  margin-bottom: 1rem;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.cart-table th {
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--bg-elevated);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.col-qty-cart {
+  width: 12rem;
+}
+
+.cart-qty-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.cart-qty-input-inline {
+  width: 3.25rem;
+  text-align: center;
+  font-family: var(--font-mono);
+  padding: 0.3rem;
+}
+
+.col-num {
+  font-family: var(--font-mono);
+}
+
+.cart-total {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-complete {
+  padding: 0.6rem 1.25rem;
+  font-size: 1rem;
+}
+
+/* Invoice modal */
+.invoice-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.invoice-modal {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem 2rem;
+  max-width: 480px;
+  width: 100%;
+}
+
+.invoice-title {
+  margin: 0 0 0.25rem;
+  font-size: 1.25rem;
+}
+
+.invoice-date {
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.invoice-table th,
+.invoice-table td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.invoice-table th {
+  font-weight: bold;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.invoice-grand-total {
+  margin: 0 0 1.25rem;
+  font-size: 1.05rem;
+}
+
+.invoice-actions {
+  display: flex;
+  gap: 0.75rem;
+}
